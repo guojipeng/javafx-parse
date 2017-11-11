@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#onSetingClick" text="Setting" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="preference">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox prefHeight="384.0" prefWidth="608.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label fx:id="labelLoad" text="Label" />
+                  <TextField fx:id="textFildLoad" prefHeight="26.0" prefWidth="375.0" />
+                  <Button fx:id="btnLoad" mnemonicParsing="false" onAction="#btnLoadClick" text="Button" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label fx:id="labelSave" text="Label" />
+                  <TextField fx:id="textFildSave" prefHeight="26.0" prefWidth="375.0" />
+                  <Button fx:id="btnSavePath" mnemonicParsing="false" onAction="#btnSavePathClick" text="Button" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label fx:id="labelId" text="Label" />
+                  <TextField fx:id="textFildId" />
+                  <Label fx:id="labelDescriptio" text="Label" />
+                  <TextField fx:id="textFiledDescription" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="600.0" spacing="20.0">
+               <children>
+                  <Label fx:id="labelCNName" text="Label" />
+                  <TextField fx:id="textFildCNName" />
+                  <Label fx:id="labelENName" text="Label" />
+                  <TextField fx:id="textFiledENName" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label fx:id="labelFacility" text="Label" />
+                  <TextField fx:id="textFiledFacility" prefHeight="23.0" prefWidth="218.0" />
+                  <Button fx:id="btnFacility" mnemonicParsing="false" onAction="#btnFacilityClick" text="Button" />
+                  <Button fx:id="btnSelected" mnemonicParsing="false" onAction="#btnSelectedClick" text="Button" />
+               </children>
+            </HBox>
+            <ListView fx:id="listView" prefHeight="110.0" prefWidth="600.0" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btnInsert" mnemonicParsing="false" onAction="#btnInsertClick" text="Button" />
+            <Button fx:id="btnSave" mnemonicParsing="false" onAction="#btnSave" text="Button" />
+            <CheckBox fx:id="cbAppendFile" mnemonicParsing="false" text="CheckBox" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
